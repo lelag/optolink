@@ -59,6 +59,9 @@ public class Main {
 		});
 
 		try {
+			log.info("Openning sockets...");
+
+			MyHttpServer httpServer = new MyHttpServer(config, viessmannHandler);
 
 			// Start SocketHandler
 			SocketHandler socketHandler = new SocketHandler(config, viessmannHandler);
